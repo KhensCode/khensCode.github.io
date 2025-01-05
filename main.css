@@ -1,14 +1,37 @@
 html, body {
     height: 100%;
     margin: 0;
-    background-color: #BCCCDC;
+   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 10px;
 }
-
+body {
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 50%, #a1c4fd 100%);
+    animation: gradient 5s ease infinite;
+}
+.github{
+    padding: 18px;
+    border-radius: 4px;
+    border: 0;
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    outline: 0;
+    font-size: 12px;
+    justify-content: space-between;
+    display: flex;
+    background-color: #0c0c0cce;
+    color: white;
+    box-shadow: 1px 2px 10px rgba(23, 155, 126, 0.678);
+    cursor: pointer;
+}
+.github:focus{
+    opacity: 0.5;
+    font-size: 13px;
+}
 h1 {
     font-family: "Ubuntu", serif;
     font-weight: 700;
@@ -20,7 +43,7 @@ h1 {
     width: 100%;
     max-width: 400px;
     padding: 23px;
-    height:auto;
+    height: auto;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -70,14 +93,15 @@ h1 {
     cursor: pointer;
     margin-left: 10px;
 }
-.bx.bxs-copy-alt:hover{
-   background-color:#212222;
-   border-radius: 8px;
-   padding: 12px;
+
+.bx.bxs-copy-alt:hover {
+    background-color: #212222;
+    border-radius: 8px;
+    padding: 12px;
 }
+
 .highlighted::selection {
-    background: rgb(37, 126, 104);
-  
+    background: rgb(66, 116, 150);
 }
 
 input {
@@ -87,28 +111,37 @@ input {
     border-radius: 6px;
     color: #fff;
     padding: 12px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
     font-family: "Ubuntu", serif;
     font-weight: 400;
     font-style: normal;
     flex: 1;
     min-width: 200px;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
+
 input::placeholder {
     color: #fff;
 }
 
+@media (min-width: 320px) {
+    .container {
+        max-width: 300px;
+    }
+}
 
 @media (min-width: 768px) {
     .container {
-        max-width: 200px;
+        max-width: 400px;
     }
 }
 
 @media (min-width: 1024px) {
     .container {
-        max-width: 400px;
+        max-width: 600px;
     }
 }
+

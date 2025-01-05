@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #BCCCDC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+h1 {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 23px;
+    height:auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    background-color: #379777;
+    border-radius: 6px;
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(15, 15, 15);
+    padding: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    font-size: 13px;
+    color: #fff;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.pass {
+    color: #2d4221;
+    padding: 10px;
+}
+
+.bx.bxs-copy-alt {
+    color: rgb(158, 144, 144);
+    font-size: 32px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.bx.bxs-copy-alt:hover{
+   background-color:#212222;
+   border-radius: 8px;
+   padding: 12px;
+}
+.highlighted::selection {
+    background: rgb(37, 126, 104);
+  
+}
+
+input {
+    border: 0;
+    outline: 0;
+    background-color: #6b7270;
+    border-radius: 6px;
+    color: #fff;
+    padding: 12px;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+    flex: 1;
+    min-width: 200px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+input::placeholder {
+    color: #fff;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 400px;
+    }
+}
